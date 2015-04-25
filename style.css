@@ -1,0 +1,50 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: white;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner{
+	width: 100%;
+	height: auto;
+	font-size: 80px;
+	margin: 0px auto;
+	text-align: center;
+	background-color: #FFDA55;
+	color: white;
+}
+.shoutout {
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	padding: 10px;
+	background-color: #FFDA55;
+	color: white;
+	font-size: 14px;
+	display: inline-flex;
+	overflow: scroll;
+}
+
+#showcase{
+	font-size: 32px;
+	margin: 0px auto;
+	padding: 25px;
+	text-align: center;
+	width: 800px;
+	height: 250px;
+	color: #FFDA55;
+	overflow: scroll;
+	display: block;
+}
+
+.display {
+	margin: 0px auto;
+	width: 850px;
+
+
+}
