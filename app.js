@@ -1,5 +1,13 @@
 $(document).ready(function(){
-	readInData("data/feedback.txt");
+	var list = readInData("data/feedback.txt");
+
+	$(".display").on('click', '.shoutout', function(){
+		var el = $(this)
+		$("#showcase").fadeOut("slow", function() {
+			$("#showcase").text(el.text());
+			$("#showcase").fadeIn("slow");
+		});
+	});
 });
 
 // use the variable displayData to capture data from the given file
@@ -7,12 +15,13 @@ var displayData;
 
 // function readInData reads data from a given file
 function readInData(filename){
-	$.get(filename, function(data){
+	return $.get(filename, function(data){
 		data = removeLines(data);
 		data = data.splice(1);
 		data = removeDates(data);
 		animateData(data);
-	}, "text");};
+	}, "text");
+	;};
 
 
 function removeLines(string){
